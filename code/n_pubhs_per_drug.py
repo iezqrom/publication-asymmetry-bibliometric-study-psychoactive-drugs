@@ -148,7 +148,7 @@ def fig_2_indv(data, sch_color, max_y, steps, dict_params):
     ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
     plt.tight_layout()
 
-    plt.savefig(f'./../figures/dev_write_up/sched_2_{data.lower()}.png'.format(), transparent = True, bbox_inches='tight')
+    plt.savefig(f'./../figures/writeup/sched_2_{data.lower()}.png'.format(), transparent = True, bbox_inches='tight')
 
     return dict_params
 
@@ -230,7 +230,7 @@ ax.tick_params(left=False,
                 labelleft=False,
                 labelbottom=False)
 
-plt.savefig(f'./../figures/dev_write_up/solo_legend.png', transparent = True, bbox_inches='tight')
+plt.savefig(f'./../figures/writeup/solo_legend.png', transparent = True, bbox_inches='tight')
 
 # %% Figure 2 fitting by schedule
 def fig_2_sche(data, color, lineswag, name_file, max_y, steps, dict_params):
@@ -280,7 +280,7 @@ def fig_2_sche(data, color, lineswag, name_file, max_y, steps, dict_params):
     ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
     plt.tight_layout()
 
-    plt.savefig(f'./../figures/dev_write_up/{name_file}.png'.format(), transparent = True, bbox_inches='tight')
+    plt.savefig(f'./../figures/writeup/{name_file}.png'.format(), transparent = True, bbox_inches='tight')
 
     return dict_params
 
@@ -349,7 +349,7 @@ def fig_2_drug_cat(data, color, title, name_file, max_y, steps, dict_params):
     ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
     plt.tight_layout()
 
-    plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+    plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
 
     return dict_params
 
@@ -391,7 +391,7 @@ dict_params = fig_2_drug_cat(stimulants, red_dnm, 'Number of publications about 
 #### Figure 3 Rs, Grs and table
 # %% Save R^2, a_init, g_rate as csv for table
 file_table = 'table_params_exp'
-table_exp_params = open('./../figures/dev_write_up/{}.csv'.format(file_table), 'a')
+table_exp_params = open('./../figures/writeup/{}.csv'.format(file_table), 'a')
 
 data_writer = csv.writer(table_exp_params)
 header_pure = dict_params['Alcohol'].keys()
@@ -491,7 +491,7 @@ ax.set_xlim([0, 1])
 # # name_file = 'heatmap_r_values'
 plt.tight_layout(pad=1.6)
 name_file = 'hbars_r_values_ORD_sched'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
 
 # %%
 order_sched = ['Psilocybin', 'Cannabis', 'Khat', 'LSD', 'Heroin', 'MDMA',
@@ -540,7 +540,7 @@ ax.set_xlabel('Growth rate (r)', labelpad=20)
 
 plt.tight_layout(pad=1.6)
 name_file = 'exp_hbars_sched_ORD'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
 
 # %% R-square values coloured by schedule ORDERED MAX TO LOW
 sort_orders_r2 = sorted(rs_ds.items(), key=lambda x: x[1][0], reverse=True)
@@ -602,7 +602,7 @@ ax.set_xlim([0, 1])
 # # name_file = 'heatmap_r_values'
 plt.tight_layout(pad=1.6)
 name_file = 'hbars_r_values_sched'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
 
 # %% PLOT R squares
 zs = np.reshape(r_squares, (16, 1))
@@ -647,7 +647,7 @@ ax.set_ylim([1, 58])
 # # name_file = 'heatmap_r_values'
 plt.tight_layout(pad=1.6)
 name_file = 'hbars_r_values'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
 
 # %% GROWTH RATE by SCHEDULE
 
@@ -698,7 +698,7 @@ ax.set_xlabel('Growth rate (r)', labelpad=20)
 
 plt.tight_layout(pad=1.6)
 name_file = 'exp_hbars_sched'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
 
 
 # %%
@@ -735,7 +735,7 @@ ax.set_xlabel('Growth rate (r)', labelpad=20)
 
 plt.tight_layout(pad=1.6)
 name_file = 'exp_hbars'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
 
 
 # %% Initial value
@@ -849,7 +849,7 @@ def fig_3_sched(data, color, name_file):
     leg.get_frame().set_linewidth(0.0)
 
     # plt.tight_layout()
-    plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+    plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
 
 # %% Schedule I
 fig_3_sched(sched_Irgr[:3], ['#235f74', '#3388a6', '#99c3d2'], 'sched_I_lsd_md_hero')
@@ -921,7 +921,7 @@ def fig_3_rgr(data, color, title, name_file):
     leg.get_frame().set_linewidth(0.0)
 
     # plt.tight_layout()
-    plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+    plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
 
 # %% Depressants
 fig_3_rgr(depressants, blue_moon, 'Relative Growth Rate.\n Excluding alcohol', 'rgr_depressants_excl_alc')
@@ -1055,9 +1055,9 @@ leg.get_frame().set_facecolor('none')
 leg.get_frame().set_linewidth(0.0)
 
 name_file = 'time_pie_chart_sched_indv'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
-name_file = 'figure5_time_pie_chart_sched_indv'
-plt.savefig('./../figures/final_paper/{}.pdf'.format(name_file), transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+# name_file = 'figure5_time_pie_chart_sched_indv'
+# plt.savefig('./../figures/final_paper/{}.pdf'.format(name_file), transparent = True, bbox_inches='tight')
 
 # %%
 
@@ -1104,9 +1104,8 @@ leg.get_frame().set_linewidth(0.0)
 # plt.tight_layout()
 
 name_file = 'time_pie_chart_inset'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
-plt.savefig('./../figures/final_paper/{}.pdf'.format(name_file), transparent = True, bbox_inches='tight')
-
+plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+# plt.savefig('./../figures/final_paper/{}.pdf'.format(name_file), transparent = True, bbox_inches='tight')
 
 # %%
 
@@ -1163,9 +1162,9 @@ for lo in leg.legendHandles:
 # plt.tight_layout()
 
 name_file = 'time_pie_chart_by_schedule'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
-name_file = 'figure5_time_pie_chart_by_schedule'
-plt.savefig('./../figures/final_paper/{}.pdf'.format(name_file), transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+# name_file = 'figure5_time_pie_chart_by_schedule'
+# plt.savefig('./../figures/final_paper/{}.pdf'.format(name_file), transparent = True, bbox_inches='tight')
 
 # %%
 
@@ -1223,9 +1222,9 @@ for lo in leg.legendHandles:
 # plt.tight_layout()
 
 name_file = 'time_pie_chart_by_cat'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
-name_file = 'figure5_time_pie_chart_by_cat'
-plt.savefig('./../figures/final_paper/{}.pdf'.format(name_file), transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+# name_file = 'figure5_time_pie_chart_by_cat'
+# plt.savefig('./../figures/final_paper/{}.pdf'.format(name_file), transparent = True, bbox_inches='tight')
 
 
 # %% Figure 5 Per countries
@@ -1317,7 +1316,7 @@ def fig_5_countries(dat, years, title, color, y_max, steps, name_file):
     leg.get_frame().set_linewidth(0.0)
     plt.tight_layout()
 
-    plt.savefig('./../figures/dev_write_up/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
+    plt.savefig('./../figures/writeup/{}.png'.format(name_file), transparent = True, bbox_inches='tight')
 
 
 # %% Figure 5 Alcohol
@@ -1609,7 +1608,7 @@ leg.get_frame().set_linewidth(0.0)
 ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
 
 name = 'all'
-# plt.savefig('./../figures/dev_write_up/{}.png'.format(name), transparent = True, bbox_inches='tight')
+# plt.savefig('./../figures/writeup/{}.png'.format(name), transparent = True, bbox_inches='tight')
 
 # %% ############# Figure 2 all no alcohol
 drugs = raw.iloc[:,2:16]
@@ -1637,7 +1636,7 @@ ax.spines['top'].set_visible(False)
 ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
 
-plt.savefig('./../figures/dev_write_up/all_no_alc.png', transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/all_no_alc.png', transparent = True, bbox_inches='tight')
 
 # %% ############ Figure 2 number pubs selected_two_axes
 drugs_two = ['Cannabis', 'Ketamine', 'MDMA', 'Psilocybin']
@@ -1686,7 +1685,7 @@ ax2.spines['top'].set_visible(False)
 ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
 ax2.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
 
-plt.savefig('./../figures/dev_write_up/selected_two_axes.png', transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/selected_two_axes.png', transparent = True, bbox_inches='tight')
 
 
 # %% ############ Figure 2 WoS
@@ -1715,7 +1714,7 @@ ax.spines['top'].set_visible(False)
 ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
 
-plt.savefig('./../figures/dev_write_up/WoS.png', transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/WoS.png', transparent = True, bbox_inches='tight')
 
 
 # %% ############ Figure 2 LSD, Psilocybin, alcohol
@@ -1765,7 +1764,7 @@ ax2.set_ylabel('Number of publications: Alcohol')
 ax2.yaxis.label.set_color('b')
 ax2.spines['right'].set_color('b')
 
-plt.savefig('./../figures/dev_write_up/psyche_alc.png', transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/psyche_alc.png', transparent = True, bbox_inches='tight')
 
 # %%############ Figure 2 Depressants
 fig, ax = plt.subplots(figsize = (20, 10))
@@ -1805,4 +1804,4 @@ leg.get_frame().set_linewidth(0.0)
 ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
 
 name = 'depressants'
-plt.savefig('./../figures/dev_write_up/{}.png'.format(name), transparent = True, bbox_inches='tight')
+plt.savefig('./../figures/writeup/{}.png'.format(name), transparent = True, bbox_inches='tight')
