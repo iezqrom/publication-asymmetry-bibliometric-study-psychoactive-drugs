@@ -1,40 +1,18 @@
-# Asymmetry in Psychoactive Research: A Bibliometric Study on 15 Psychoactive Drugs
+# Asymmetry in Psychoactive Research: A Bibliometric Study on 15 Psychoactive Drugs :pill::pill:
 [Version in Journal of Drug Issues](https://journals.sagepub.com/doi/full/10.1177/00220426211068439)
 
-## Highlights :star::zap:
-- Most studies on cold sensation fail to control for concomitant tactile input.
-- A method to deliver non-tactile cooling stimuli was developed.
-- The method combines dry ice, a thermal camera, and motorised stages.
-- The method delivers rapid ramps and feedback-controlled pulses.
-- Thresholds for contactless cold perception were estimated in humans
-
 ## Abstract :page_with_curl:
-### Background
-Thermal and tactile stimuli are transduced by different receptor classes. However, mechano- and thermo-sensitive afferents interact at spinal and supraspinal levels. Yet, most studies on responses to cooling stimuli are confounded by mechanical contact, making these interactions difficult to isolate. Methods for precise control of non-mechanical thermal stimulations remain challenging, particularly in the cold range.
-
-### New Method
-We developed a non-tactile, focal, temperature-controlled, multi-purpose cooling stimulator. This method controls the exposure of a target skin region to a dry-ice source. Using a thermal camera to monitor skin temperature, and adjusting the source-skin distance accordingly, we could deliver non-tactile cooling stimuli with customisable profiles, for studying different aspects of cold sensation.
-
-### Results
-To validate our method, we measured absolute and relative thresholds for cold sensation without mechanical contact in 13 human volunteer participants, using the method of limits. We found that the absolute cold detection threshold was 32.71 oC ± 0.88 oC. This corresponded to a threshold relative to each participant’s baseline skin temperature of -1.08 oC ± 0.37 oC.
-
-### Comparisons with Existing Method
-Our method allows cooling stimulation without the confound of mechanical contact, in a controllable and focal manner.
-
-### Conclusions
-We report a non-contact cooling stimulator and accompanying control system. We used this to measure cold thresholds in the absence of confounding touch. Our method enables more targeted studies of both cold sensory pathways, and of cold-touch interactions.
+Although intended to avoid illicit drug use, national laws and international conventions have limited research on psychoactive drugs. To characterise the evolution of the literature on psychoactive drugs, a bibliometric study of 15 psychoactive drugs from 1960 to 2018 was conducted in which 956,703 academic publications were obtained from Web of Science. Growth patterns were analysed per drug type, legal status and country. Our results show the existence of heterogeneous patterns of growth for the publications of different psychoactive drugs. Strikingly, the literature on legal substances and depressants represented between 60% and 80% throughout the years. We found unexpected regional differences in the scientific output about the selected drugs, which might be explained by cultural and political phenomena. Governments and funding bodies should consider these results when allocating resources to research on psychoactive drugs to optimise the therapeutic applications of these compounds and our understanding of the nervous system
 
 ## Authors :man_scientist::woman_scientist:
+- Julia Lebrero-Tatay
+- Arthur Sebag
 - Ivan Ezquerra-Romano
-- Maansib Chowdhury
-- Caterina Maria Leone
-- Gian Domenico Iannetti
-- Patrick Haggard
 
-**Keywords:** :key: Thermoception, Perception, Sensation, Temperature, Mechanosensation, Cold
+**Keywords:** :key: Psychoactive drugs, bibliometric study, drug policy, depressants, drug policy
 
 
 ### Environment :computer::floppy_disk:
-- Devices: MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports) & Arduino Uno
+- Devices: MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)
 - Operating system: macOS Monterey Version 12.4
-- Programming languages: Python 3.8.6 & Arduino 1.8.19
+- Programming languages: Python 3.8.6
